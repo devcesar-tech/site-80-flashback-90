@@ -1,0 +1,153 @@
+html {scroll-behavior: smooth;
+}
+
+/*o corpo do site cuida do fundo e do texto comun */
+body {              
+    background-color: black; /* muda a cor do fundo */
+    color: white;  /* muda a cor das letras */
+    font-family: Arial, Helvetica, sans-serif; /* fonte das letras */
+}
+
+/* o h1 cuida apenas do seu nome no topo */
+h1 {
+    color: greenyellow;
+    text-align: center;
+}
+
+/* os h2 cuidam dos títulos e das seções */
+h2 {
+    color: aqua; /* as seções também ganham o brilho neon */
+}
+
+/* ativa o modo flexível no rodapé inteiro */
+footer {
+    display: flex; 
+    justify-content: space-between; /* Empurra as redes para a extrema esquerda e o flyer para a extrema direita */
+    align-items: center; /* Alinha os dois verticalmente pelo meio */
+    padding: 40px 20px; /* Cria um espaço confortável nas bordas para não ficar colado na tela */
+    margin-top: 50px; /* Dá uma distância elegante da seção anterior (Sobre) */
+    border-top: 1px solid aqua; /* Cria uma linha neon sutil separando o rodapé do resto do site */
+}
+
+/* Garante que os links das redes sociais continuem um embaixo do outro */
+.redes-sociais ul {
+    list-style-type: none; /* Tira as bolinhas das redes sociais */
+    padding: 0;
+}
+
+/* Dá um espaçamento entre cada rede social para ficar fácil de clicar */
+.redes-sociais li {
+    margin-bottom: 15px;
+}
+
+/* Estiliza os links das redes sociais */
+.redes-sociais a {
+    color: aquamarine;
+    text-decoration: none;
+    font-weight: bold;
+} 
+
+/* Cria o menu horizontal invertido (da direita para a esquerda) */
+nav ul {
+    display: flex;
+    flex-direction: row;  /* Inverte a ordem das palavras */
+    justify-content: space-around; /* Distribui os botões com espaços iguais */
+    list-style-type: none; /* Remove as bolinhas pretas da lista */
+    padding: 0; /* Tira os espaços extras padrão */
+}
+
+/* Deixa as letras dos botões do menu bonitas e brancas */
+nav a {
+    color: white;
+    text-decoration: none; /* Tira aquele sublinhado feio padrão */
+    font-weight: bold; /* Deixa a letra em negrito */
+}
+
+/* Destaca a primeira coluna da tabela (as datas) */
+.data-evento {
+    color: greenyellow; /* Faz a data brilhar em verde-limão */
+    font-size: 1.3rem; /* Deixa a letra um pouco maior que o texto normal*/
+    font-weight: bold; /* Deixa em negrito pesado */
+    padding-right: 20px; /* Dá um espaço confortável para o texto da festa não ficar grudado na data */
+    white-space: nowrap; /* Impede que a data quebre em duas linhas (ex: 24/ em cima e 10 embaixo) */
+}
+
+/* Dá um espaçamento entre uma linha de festa e outra para respirar */
+#agenda table tr {
+    height: 55px;
+}
+
+/* 1. Faz a tabela da agenda usar toda a largura disponível */
+#agenda table {
+    width: 100%;
+    border-collapse: collapse; /* Deixa as linhas firmes e sem espaços duplos */
+    margin-top: 20px;  /* Afasta a tabela do título "agenda" */
+}
+
+/* 1. Centraliza a tabela de fotos na tela e afasta do título */
+#fotos table {
+    margin: 30px auto;  /* O 'auto' calcula o espaço dos lados e joga a tabela pro centro */
+}
+
+/* 2. Cria um espaço confortável entre uma foto e outra */
+#fotos table tr {
+    height: 520px; /* Um pouco maior que o tamanho da foto para dar um respiro */
+}
+
+/* 3. Dá o acabamento profissional nas imagens */
+#fotos img {
+    border: 2px solid aqua; /* Cria uma linha fina em azul aqua em volta da foto */
+    border-radius: 8px; /* Arredonda levemente os cantos da foto */
+    box-shadow: 0 0 15px aqua; /*Cria um efeito de brilho neon pulsando atrás da foto! */
+    /*box-shadow: [Direção Horizontal] [Direção Vertical] [Intensidade do Desfoque] [Cor];*/
+}
+
+/* 1. Estiliza a lista do ranking */
+#as-dez-mais ol {
+    padding-left: 20px; /* Cria o espaço para os números do ranking aparecerem */
+    margin-top: 25px;
+}
+
+/* 2. Dá um espaço confortável entre uma música e outra */
+#as-dez-mais li {
+    margin-bottom: 20px;
+    font-size: 1.1rem; /* Deixa o texto da música um pouquinho maior */
+}
+
+/* 3. Transforma o link do YouTube em um "botão" elegante */
+#as-dez-mais a {
+    color: aqua; /* O link ganha a cor do neon do site */
+    text-decoration: none; /* Remove aquele sublinhado padrão feio */
+    margin-left: 15px; /* Afasta o link do nome da música */
+    font-size: 0.9rem; /* Deixa o texto do link ligeiramente menor */
+    font-weight: bold;
+}
+
+/* 4. Efeito "Passar o mouse" (Hover) no link */
+#as-dez-mais a:hover {
+    color: greenyellow;  /* Quando o usuário passa o mouse, o link muda de azul para verde-limão instantaneamente! */
+    text-decoration: underline; /* O sublinhado só aparece nessa hora, indicando o clique */
+}
+
+/* Afasta a seção Sobre das músicas e organiza a lista interna */
+#sobre {
+    margin-top: 40px;
+}
+
+#sobre ul {
+    list-style-type: none; /* Tira as bolinhas do Nome e Idade */
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+#sobre li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+/* Deixa o texto biográfico do parágrafo mais elegante e espaçado */
+#sobre p {
+    font-size: 1.1rem;
+    line-height: 1.6; /* Dá um espaço confortável entre as linhas do texto */
+    color: #cccccc; /* Um tom de cinza claro para não brigar com o branco principal */
+}
