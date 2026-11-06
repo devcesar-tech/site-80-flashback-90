@@ -2,16 +2,16 @@
 //1. Criamos a nossa lista de eventos
 const meusShows = [
     { 
-        data: "24/10",
-        descricao: "Night Club House apresenta: Noite do Neon em Anastácio-MS às 22:00h"
+        data: "06/11",
+        descricao: "Canal Aquidauana DJs apresenta: DJ Cesar no Vinil às 20:00h "
     },
     {
-        data: "31/10",
-        descricao: "Arena Club apresenta: House Fest em Aquidauana-MS às 22;00h"
+        data: "25/11",
+        descricao: "Canal Planet Mix apresenta: DJ Cesar no Vinil às 20:00h"
     },
     {
         data: "05/12",
-        descricao: "Club FlashDance apresenta: Noite FlashMix em Campo Grande-MS às 22:00h"
+        descricao: "Canal 80FLASHBACK 90 apresenta: 1 Ano de transmissão às 17:00h"
     }
 ];
 
@@ -31,4 +31,3 @@ meusShows.forEach(function(show) {
  
 // 4. Procuramos a tabela pelo ID e injetamos o resultado final nela
 document.getElementById('lista-agenda').innerHTML = htmlAcumulado
-
